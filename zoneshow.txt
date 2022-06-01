@@ -12,12 +12,6 @@ Defined configuration:
                 esxi03_fc0_EMC_VNX5400; esxi04_fc0_EMC_VNX5400;
                 esxi05_fc0_EMC_VNX5400; esxi06_fc0_EMC_VNX5400;
                 esxi07_fc0_EMC_VNX5400; esxi08_fc0_EMC_VNX5400
- zone:  UCS_DEFAULT
-                chh_esx1; chh_esx2; chh_esx3; chh_esx4; chh_esx5; chh_esx6;
-                chh_esx7; chh_esx8; chh_fi_A; EMC_VNX5400
- zone:  UCS_PURE
-                chh_esx1; chh_esx2; chh_esx3; chh_esx4; chh_esx5; chh_esx6;
-                chh_esx7; chh_esx8; CHHPure01_CT0_FC0; CHHPure01_CT1_FC0
  zone:  esxi01_fc0_CHHPure01_CT0_FC0
                 esxi01_fc0; CHHPure01_CT0_FC0
  zone:  esxi01_fc0_CHHPure01_CT1_FC0
@@ -71,29 +65,11 @@ Defined configuration:
  alias: CHHPure01_CT1_FC0
                 52:4a:93:72:e5:fb:c5:10
  alias: EMC_VNX5400
-                50:06:01:60:08:60:18:f5; 50:06:01:60:88:60:18:f5
- alias: chh_esx1
-                20:00:00:25:b5:00:00:2f; 20:00:00:25:b5:01:00:1f
- alias: chh_esx2
-                20:00:00:25:b5:00:00:3f; 20:00:00:25:b5:01:00:5e
- alias: chh_esx3
-                20:00:00:25:b5:00:00:0f; 20:00:00:25:b5:01:00:3e
- alias: chh_esx4
-                20:00:00:25:b5:00:00:1f; 20:00:00:25:b5:01:00:1e
- alias: chh_esx5
-                20:00:00:25:b5:00:00:4e; 20:00:00:25:b5:01:00:5d
- alias: chh_esx6
-                20:00:00:25:b5:00:00:5e; 20:00:00:25:b5:01:00:3d
- alias: chh_esx7
-                20:00:00:25:b5:00:00:4f; 20:00:00:25:b5:01:00:5f
- alias: chh_esx8
-                20:00:00:25:b5:00:00:5f; 20:00:00:25:b5:01:00:3f
- alias: chh_fi_A
-                20:01:00:2a:6a:54:8a:01; 20:20:00:2a:6a:54:8a:00
+                50:06:01:60:08:60:18:f5
  alias: esxi01_fc0
                 20:00:00:25:b5:01:00:1f
  alias: esxi02_fc0
-                20:00:00:25:b5:01:00:5e; 20:00:00:25:b5:01:00:0d
+                20:00:00:25:b5:01:00:0d
  alias: esxi03_fc0
                 20:00:00:25:b5:01:00:3e
  alias: esxi04_fc0
@@ -120,15 +96,12 @@ Effective configuration:
                 50:06:01:60:08:60:18:f5
                 50:06:01:60:88:60:18:f5
  zone:  esxi02_fc0_CHHPure01_CT0_FC0
-                20:00:00:25:b5:01:00:5e
                 20:00:00:25:b5:01:00:0d
                 52:4a:93:72:e5:fb:c5:00
  zone:  esxi02_fc0_CHHPure01_CT1_FC0
-                20:00:00:25:b5:01:00:5e
                 20:00:00:25:b5:01:00:0d
                 52:4a:93:72:e5:fb:c5:10
  zone:  esxi02_fc0_EMC_VNX5400
-                20:00:00:25:b5:01:00:5e
                 20:00:00:25:b5:01:00:0d
                 50:06:01:60:08:60:18:f5
                 50:06:01:60:88:60:18:f5
