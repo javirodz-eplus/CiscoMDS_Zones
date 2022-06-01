@@ -42,13 +42,13 @@ if __name__ == '__main__':
         zone_conf_file = open('input.json', 'r')
         zone = json.load(zone_conf_file)
         zonesetname = zone['zoneset']
-        print(f'The zoneset name is {zonesetname}')
+        # print(f'The zoneset name is {zonesetname}')  # Debug
         vsan_id = zone['vsan_id']
-        print(f'The VSAN ID is {vsan_id}')
+        # print(f'The VSAN ID is {vsan_id}')  # Debug
         initiator = zone['initiators']
-        print(f'The initiators are {initiator}')
+        # print(f'The initiators are {initiator}')  # Debug
         target = zone['targets']
-        print(f'The targets are {target}')
+        # print(f'The targets are {target}')  # Debug
         zone_conf_file.close()
     else:
         # Some default values for now
