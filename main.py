@@ -38,7 +38,7 @@ if __name__ == '__main__':
     brand = "cisco"
 
     if os.path.exists('input.json'):
-        print("INPUT Present, not prompting the user for the values.")
+        print("INPUT JSON Present, not prompting the user for the values.")
         zone_conf_file = open('input.json', 'r')
         zone = json.load(zone_conf_file)
         zonesetname = zone['zoneset']
