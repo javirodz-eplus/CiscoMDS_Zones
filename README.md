@@ -1,4 +1,9 @@
 # CiscoMDS_Zones
+This python script will print the zoning configuration for a Cisco MDS switch to the 'zoning.txt' file.
+The script will check if there exists a file with the name inputs.json to get the input. If there is no such file  
+then it will prompt the user.
 
-Prompt the user for the initiator and target WWPN then create the Cisco MDS configuration to create a single-initiator to single-target zone.   
-You can copy and paste the content of 'zoning.txt' directly into the switch. In line 47 set the vsan id and in line 48 set the zoneset name.
+The zone will be done as single-initiator-single-target.
+
+You can copy and paste the content of 'zoning.txt' directly into the switch, but be careful because  
+the configuration will overwrite the active zoneset for vsan 1.
