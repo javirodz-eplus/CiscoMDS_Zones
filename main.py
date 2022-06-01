@@ -44,8 +44,6 @@ if __name__ == '__main__':
 
     # Some default values for now
     brand = "cisco"
-    wwpn = "50:01:43:80:24:d2:9b:b6"
-    name = "esxi01"
     vsan_id = "1"
     zonesetname = "sw1_config"
 
