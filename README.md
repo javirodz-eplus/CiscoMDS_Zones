@@ -6,4 +6,4 @@ then it will prompt the user.
 The zone will be done as single-initiator-single-target.
 
 You can copy and paste the content of 'zoning.txt' directly into the switch, but be careful because  
-the configuration will overwrite the active zoneset for vsan 1.
+the configuration will overwrite the active zoneset for the vsan.
