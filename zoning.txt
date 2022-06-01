@@ -1,0 +1,201 @@
+conf t
+fcalias name chhesxi01_vmhba1 vsan 1
+member pwwn 20:00:00:25:b5:01:00:1f
+exit
+fcalias name chhesxi02_vmhba0 vsan 1
+member pwwn 20:00:00:25:b5:01:00:0d
+exit
+fcalias name chhesxi03_vmhba1 vsan 1
+member pwwn 20:00:00:25:b5:01:00:3e
+exit
+fcalias name chhesxi04_vmhba1 vsan 1
+member pwwn 20:00:00:25:b5:01:00:1e
+exit
+fcalias name chhesxi05_vmhba1 vsan 1
+member pwwn 20:00:00:25:b5:01:00:5d
+exit
+fcalias name chhesxi06_vmhba1 vsan 1
+member pwwn 20:00:00:25:b5:01:00:3d
+exit
+fcalias name chhesxi07_vmhba1 vsan 1
+member pwwn 20:00:00:25:b5:01:00:5f
+exit
+fcalias name chhesxi08_vmhba1 vsan 1
+member pwwn 20:00:00:25:b5:01:00:3f
+exit
+fcalias name CHHPure01_CT0_FC0 vsan 1
+member pwwn 52:4a:93:72:e5:fb:c5:00
+exit
+fcalias name CHHPure01_CT1_FC0 vsan 1
+member pwwn 52:4a:93:72:e5:fb:c5:10
+exit
+fcalias name EMC_VNX5400_SPAP0 vsan 1
+member pwwn 50:06:01:60:08:60:18:f5
+exit
+fcalias name EMC_VNX5400_SPAP1 vsan 1
+member pwwn 50:06:01:61:08:60:18:f5
+exit
+zone name chhesxi01_vmhba1_CHHPure01_CT0_FC0 vsan 1
+member fcalias chhesxi01_vmhba1
+member fcalias CHHPure01_CT0_FC0
+exit
+zone name chhesxi01_vmhba1_CHHPure01_CT1_FC0 vsan 1
+member fcalias chhesxi01_vmhba1
+member fcalias CHHPure01_CT1_FC0
+exit
+zone name chhesxi01_vmhba1_EMC_VNX5400_SPAP0 vsan 1
+member fcalias chhesxi01_vmhba1
+member fcalias EMC_VNX5400_SPAP0
+exit
+zone name chhesxi01_vmhba1_EMC_VNX5400_SPAP1 vsan 1
+member fcalias chhesxi01_vmhba1
+member fcalias EMC_VNX5400_SPAP1
+exit
+zone name chhesxi02_vmhba0_CHHPure01_CT0_FC0 vsan 1
+member fcalias chhesxi02_vmhba0
+member fcalias CHHPure01_CT0_FC0
+exit
+zone name chhesxi02_vmhba0_CHHPure01_CT1_FC0 vsan 1
+member fcalias chhesxi02_vmhba0
+member fcalias CHHPure01_CT1_FC0
+exit
+zone name chhesxi02_vmhba0_EMC_VNX5400_SPAP0 vsan 1
+member fcalias chhesxi02_vmhba0
+member fcalias EMC_VNX5400_SPAP0
+exit
+zone name chhesxi02_vmhba0_EMC_VNX5400_SPAP1 vsan 1
+member fcalias chhesxi02_vmhba0
+member fcalias EMC_VNX5400_SPAP1
+exit
+zone name chhesxi03_vmhba1_CHHPure01_CT0_FC0 vsan 1
+member fcalias chhesxi03_vmhba1
+member fcalias CHHPure01_CT0_FC0
+exit
+zone name chhesxi03_vmhba1_CHHPure01_CT1_FC0 vsan 1
+member fcalias chhesxi03_vmhba1
+member fcalias CHHPure01_CT1_FC0
+exit
+zone name chhesxi03_vmhba1_EMC_VNX5400_SPAP0 vsan 1
+member fcalias chhesxi03_vmhba1
+member fcalias EMC_VNX5400_SPAP0
+exit
+zone name chhesxi03_vmhba1_EMC_VNX5400_SPAP1 vsan 1
+member fcalias chhesxi03_vmhba1
+member fcalias EMC_VNX5400_SPAP1
+exit
+zone name chhesxi04_vmhba1_CHHPure01_CT0_FC0 vsan 1
+member fcalias chhesxi04_vmhba1
+member fcalias CHHPure01_CT0_FC0
+exit
+zone name chhesxi04_vmhba1_CHHPure01_CT1_FC0 vsan 1
+member fcalias chhesxi04_vmhba1
+member fcalias CHHPure01_CT1_FC0
+exit
+zone name chhesxi04_vmhba1_EMC_VNX5400_SPAP0 vsan 1
+member fcalias chhesxi04_vmhba1
+member fcalias EMC_VNX5400_SPAP0
+exit
+zone name chhesxi04_vmhba1_EMC_VNX5400_SPAP1 vsan 1
+member fcalias chhesxi04_vmhba1
+member fcalias EMC_VNX5400_SPAP1
+exit
+zone name chhesxi05_vmhba1_CHHPure01_CT0_FC0 vsan 1
+member fcalias chhesxi05_vmhba1
+member fcalias CHHPure01_CT0_FC0
+exit
+zone name chhesxi05_vmhba1_CHHPure01_CT1_FC0 vsan 1
+member fcalias chhesxi05_vmhba1
+member fcalias CHHPure01_CT1_FC0
+exit
+zone name chhesxi05_vmhba1_EMC_VNX5400_SPAP0 vsan 1
+member fcalias chhesxi05_vmhba1
+member fcalias EMC_VNX5400_SPAP0
+exit
+zone name chhesxi05_vmhba1_EMC_VNX5400_SPAP1 vsan 1
+member fcalias chhesxi05_vmhba1
+member fcalias EMC_VNX5400_SPAP1
+exit
+zone name chhesxi06_vmhba1_CHHPure01_CT0_FC0 vsan 1
+member fcalias chhesxi06_vmhba1
+member fcalias CHHPure01_CT0_FC0
+exit
+zone name chhesxi06_vmhba1_CHHPure01_CT1_FC0 vsan 1
+member fcalias chhesxi06_vmhba1
+member fcalias CHHPure01_CT1_FC0
+exit
+zone name chhesxi06_vmhba1_EMC_VNX5400_SPAP0 vsan 1
+member fcalias chhesxi06_vmhba1
+member fcalias EMC_VNX5400_SPAP0
+exit
+zone name chhesxi06_vmhba1_EMC_VNX5400_SPAP1 vsan 1
+member fcalias chhesxi06_vmhba1
+member fcalias EMC_VNX5400_SPAP1
+exit
+zone name chhesxi07_vmhba1_CHHPure01_CT0_FC0 vsan 1
+member fcalias chhesxi07_vmhba1
+member fcalias CHHPure01_CT0_FC0
+exit
+zone name chhesxi07_vmhba1_CHHPure01_CT1_FC0 vsan 1
+member fcalias chhesxi07_vmhba1
+member fcalias CHHPure01_CT1_FC0
+exit
+zone name chhesxi07_vmhba1_EMC_VNX5400_SPAP0 vsan 1
+member fcalias chhesxi07_vmhba1
+member fcalias EMC_VNX5400_SPAP0
+exit
+zone name chhesxi07_vmhba1_EMC_VNX5400_SPAP1 vsan 1
+member fcalias chhesxi07_vmhba1
+member fcalias EMC_VNX5400_SPAP1
+exit
+zone name chhesxi08_vmhba1_CHHPure01_CT0_FC0 vsan 1
+member fcalias chhesxi08_vmhba1
+member fcalias CHHPure01_CT0_FC0
+exit
+zone name chhesxi08_vmhba1_CHHPure01_CT1_FC0 vsan 1
+member fcalias chhesxi08_vmhba1
+member fcalias CHHPure01_CT1_FC0
+exit
+zone name chhesxi08_vmhba1_EMC_VNX5400_SPAP0 vsan 1
+member fcalias chhesxi08_vmhba1
+member fcalias EMC_VNX5400_SPAP0
+exit
+zone name chhesxi08_vmhba1_EMC_VNX5400_SPAP1 vsan 1
+member fcalias chhesxi08_vmhba1
+member fcalias EMC_VNX5400_SPAP1
+exit
+zoneset name sw1_config vsan 1
+member chhesxi01_vmhba1_CHHPure01_CT0_FC0
+member chhesxi01_vmhba1_CHHPure01_CT1_FC0
+member chhesxi01_vmhba1_EMC_VNX5400_SPAP0
+member chhesxi01_vmhba1_EMC_VNX5400_SPAP1
+member chhesxi02_vmhba0_CHHPure01_CT0_FC0
+member chhesxi02_vmhba0_CHHPure01_CT1_FC0
+member chhesxi02_vmhba0_EMC_VNX5400_SPAP0
+member chhesxi02_vmhba0_EMC_VNX5400_SPAP1
+member chhesxi03_vmhba1_CHHPure01_CT0_FC0
+member chhesxi03_vmhba1_CHHPure01_CT1_FC0
+member chhesxi03_vmhba1_EMC_VNX5400_SPAP0
+member chhesxi03_vmhba1_EMC_VNX5400_SPAP1
+member chhesxi04_vmhba1_CHHPure01_CT0_FC0
+member chhesxi04_vmhba1_CHHPure01_CT1_FC0
+member chhesxi04_vmhba1_EMC_VNX5400_SPAP0
+member chhesxi04_vmhba1_EMC_VNX5400_SPAP1
+member chhesxi05_vmhba1_CHHPure01_CT0_FC0
+member chhesxi05_vmhba1_CHHPure01_CT1_FC0
+member chhesxi05_vmhba1_EMC_VNX5400_SPAP0
+member chhesxi05_vmhba1_EMC_VNX5400_SPAP1
+member chhesxi06_vmhba1_CHHPure01_CT0_FC0
+member chhesxi06_vmhba1_CHHPure01_CT1_FC0
+member chhesxi06_vmhba1_EMC_VNX5400_SPAP0
+member chhesxi06_vmhba1_EMC_VNX5400_SPAP1
+member chhesxi07_vmhba1_CHHPure01_CT0_FC0
+member chhesxi07_vmhba1_CHHPure01_CT1_FC0
+member chhesxi07_vmhba1_EMC_VNX5400_SPAP0
+member chhesxi07_vmhba1_EMC_VNX5400_SPAP1
+member chhesxi08_vmhba1_CHHPure01_CT0_FC0
+member chhesxi08_vmhba1_CHHPure01_CT1_FC0
+member chhesxi08_vmhba1_EMC_VNX5400_SPAP0
+member chhesxi08_vmhba1_EMC_VNX5400_SPAP1
+exit
+zoneset activate name sw1_config vsan 1
+end
