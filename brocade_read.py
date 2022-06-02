@@ -42,5 +42,5 @@ with open('alias.json', 'w') as fp1:
 with open('reversealias.json', 'w') as fp2:
     json.dump(reversealias, fp2)
 
-# zones
+# zones #TODO (everything, I just have the line numbers in the zoneshow file that start with 'zone')
 print(zonelines)
